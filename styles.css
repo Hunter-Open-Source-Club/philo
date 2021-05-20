@@ -1,0 +1,118 @@
+body
+{
+	background-color: #FCE5A8;
+	text-align: center;
+	border: 2px solid #D9559D;
+	margin:0;
+	font-family: 'Newsreader', 'Georgia', serif;
+}
+
+.center-container
+{
+	text-align: center;
+}
+
+.left-container
+{
+	text-align: left;
+	display: inline-block;
+}
+
+#courses
+{
+	border: 2px solid black;
+	width: 65%;
+	display: inline-block;
+	padding: 2%;
+	background-color: rgba(235, 117, 167, 0.6);
+	border-radius: 1%;
+	font-size: 1.5em;
+	box-shadow: 5px 5px black;
+}
+
+.category
+{
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 2%;
+	cursor: pointer;	
+}
+
+.category-title
+{
+	font-size: 1.5em;
+	margin-left: -2em;
+	margin-bottom: 0.25em;
+	text-decoration: underline;
+}
+
+.category-title::before
+{
+	content: "▩: ";
+}
+
+.flower
+{
+	width: 4%;
+	vertical-align: sub;
+}
+
+h1
+{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 2.3em;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+.category details:hover
+{
+	transition: 0.15s;
+	background-color: rgba(235, 117, 167, 0.1);
+}
+
+ul
+{
+	margin-top: 0.25em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	list-style: none;
+}
+
+li
+{
+	margin-bottom: 0.25em;
+}
+
+li::before
+{
+	content: "≫ ";
+}
+
+.syllabusNode
+{
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 1130px)
+{ #courses { width: 80%; }}
+@media screen and (max-width: 910px)
+{ #courses { font-size: 1.2em; }}
+@media screen and (max-width: 775px)
+{ .flower { display: none; }}
+@media screen and (max-width: 720px)
+{ #courses { width: 90%; }}
+@media screen and (max-width: 635px)
+{ #courses { font-size: 1em; }}
+@media screen and (max-width: 565px)
+{
+	.category-title
+	{
+		display: inline-block;
+		margin-left: -0.5em;
+	}
+	.category-title::before { content: ""; }
+	.category { margin-left: 1em; }
+	.category details { margin-bottom: 0.25em; }
+}

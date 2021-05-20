@@ -1,2 +1,1 @@
-# philosophy_syllabi
-Hunter College Philosophy Syllabus Bank
+# Hunter College Philosophy Syllabus Bank
