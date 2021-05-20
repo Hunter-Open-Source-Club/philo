@@ -1,0 +1,19 @@
+name: Update course syllabi JSON object
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - name: Update course syllabi JSON object
+      run: |-
+        python3 update.py
+        git add scripts.js
+        git commit -m "Update course syllabi JSON object"
+        git push
